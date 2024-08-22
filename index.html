@@ -4,41 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Decodificador</title>
 </head>
 <body>
-    <header>
+    <header class="cabecalho">
         <img class="logo_alura" src="./imagens/logo-alura.png" alt="Letra a minúscula como logo da alura">
+        <p class="decodificador__texto">Decodificador de Texto</p>
+        <p class="challenge">Challenge Oracle ONE</p>
     </header>
 
     <main>
-        <section>
-            <textarea class="text_input" placeholder="Digite apenas letras minúsculas e sem acento." cols="41" rows="4"></textarea>
-            <div class="informativo">
-                <img src="./imagens/exclamacao.png" alt="Pequena imagem de uma exclamação">
-                <h6>Digite apenas letras minúsculas e sem acento.</h6>
-            </div>
-            <div>
+        <section class="esquerda">
+            <textarea class="text_input" placeholder="Digite apenas letras minúsculas e sem acento." 
+            cols="50" rows="15"></textarea>
+            
+            <div class="botoes">
                 <button class="btn_criptografar">Criptografar</button>
                 <button class="btn_descriptografar">Descriptografar</button>
             </div>
         </section>
             
-        <section>
-            <textarea class="text_output" cols="20" rows="10"></textarea>
+        <section class="direita">
+            <textarea class="text_output" cols="40" rows="15"></textarea>
             <button class="btn_copiar">Copiar</button>
         </section>
     </main>
 
-    <footer>
-        <div class="footer">
+    <footer class="rodape">
             <p>Desenvolvido por Germano</p>
-        </div>
-        
     </footer>
 </body>
 </html>

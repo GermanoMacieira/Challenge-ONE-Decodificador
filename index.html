@@ -10,8 +10,8 @@
 <body>
     <header class="cabecalho">
         <img class="logo_alura" src="./imagens/logo-alura.png" alt="Letra a minúscula como logo da alura">
-        <p class="decodificador__texto">Decodificador de Texto</p>
-        <p class="challenge">Challenge Oracle ONE</p>
+        <!-- <p class="decodificador__texto">Decodificador de Texto</p>
+        <p class="challenge">Challenge Oracle ONE</p> -->
     </header>
 
     <main>
@@ -20,13 +20,14 @@
             cols="50" rows="15"></textarea>
             
             <div class="botoes">
-                <button class="btn_criptografar">Criptografar</button>
-                <button class="btn_descriptografar">Descriptografar</button>
+                <button class="btn_criptografar" onclick="btnCriptografar()">Criptografar</button>
+                <button class="btn_descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
             </div>
         </section>
             
         <section class="direita">
-            <textarea class="text_output" cols="40" rows="15"></textarea>
+            <textarea class="text_output" 
+            cols="30" rows="15"></textarea>
             <button class="btn_copiar">Copiar</button>
         </section>
     </main>
@@ -34,5 +35,6 @@
     <footer class="rodape">
             <p>Desenvolvido por Germano</p>
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

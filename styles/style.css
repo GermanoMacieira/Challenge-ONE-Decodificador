@@ -15,17 +15,17 @@ body {
     color: white;
 }
 
-.cabecalho {
+/* .cabecalho {
     display: flex;
     justify-content:space-around;
     align-items: center;
-}
+} */
 
 .logo_alura {
-    margin: 1%;
+    margin: 20px 0 0 50px;
 }
 
-.decodificador__texto {
+/* .decodificador__texto {
     font-size: 36px;
     font-weight: 600;
     color: black;
@@ -35,7 +35,7 @@ body {
     font-size: 24px;
     font-weight: 400;
     color: black;
-}
+} */
 
 main {
     display: flex;

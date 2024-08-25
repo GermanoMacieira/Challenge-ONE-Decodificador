@@ -39,6 +39,11 @@ Este projeto é uma aplicação web simples que permite aos usuários criptograf
    - Clique em "Descriptografar" para reverter o texto criptografado.
    - Clique em "Copiar" para copiar o texto resultante.
 
+## Como Visualizar o Projeto atravéz do Github Pages
+**Acesse:**
+   ```bash
+   https://germanomacieira.github.io/Challenge-ONE-Decodificador/
+   ```
 ## Possíveis Vulnerabilidades
 
 1. **Injeção de código via `textarea`:** 

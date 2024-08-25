@@ -34,7 +34,7 @@ body {
 main {
     display: flex;
     justify-content: space-between;
-    margin: 0 100px 20px 100px;
+    margin: 0 100px 110px 100px;
     width: auto;
     height: auto;
     gap: 50px;

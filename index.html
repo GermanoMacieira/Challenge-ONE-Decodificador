@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Decodificador</title>
+    <title>Decodificador de texto</title>
 </head>
 <body>
     <header class="cabecalho">
-        <img class="logo_alura" src="./imagens/logo-alura.png" alt="Letra a minúscula como logo da alura">
-        <!-- <p class="decodificador__texto">Decodificador de Texto</p>
-        <p class="challenge">Challenge Oracle ONE</p> -->
+        <img class="logo_alura" src="./imagens/logo-alura.png" alt="Letra a como logo da alura">
+        <img class="logo_one" src="./imagens/logo-one.png" alt="Logo da Oracle ONE">
     </header>
 
     <main>
         <section class="esquerda">
             <textarea class="text_input" placeholder="Digite apenas letras minúsculas e sem acento." 
-            cols="50" rows="15"></textarea>
+            cols="50" rows="10"></textarea>
             
             <div class="botoes">
                 <button class="btn_criptografar" onclick="btnCriptografar()">Criptografar</button>
@@ -26,10 +25,13 @@
         </section>
             
         <section class="direita">
-            <textarea class="text_output" 
-            cols="30" rows="15"></textarea>
-            <button class="btn_copiar">Copiar</button>
+            <img class="imagem-menino show" src="./imagens/boneco.png" alt="imagem decorativa">
+            <textarea class="text_output hidden" cols="30" rows="5"></textarea>
+            <p class="mensagem-advertencia show"><strong>Nenhuma mensagem encontrada</strong></p>
+            <p class="mensagem-info show">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button class="btn_copiar hidden" onclick="copiar()">Copiar</button>
         </section>
+
     </main>
 
     <footer class="rodape">

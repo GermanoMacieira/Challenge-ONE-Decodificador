@@ -15,46 +15,45 @@ body {
     color: white;
 }
 
-/* .cabecalho {
+.cabecalho {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
-} */
+    margin: 2%;
+}
 
 .logo_alura {
-    margin: 20px 0 0 50px;
+    margin: 20px 0 0 80px;
 }
 
-/* .decodificador__texto {
-    font-size: 36px;
-    font-weight: 600;
-    color: black;
+.logo_one {
+    width: 10%;
+    margin: 20px 80px 0 0;
 }
-
-.challenge {
-    font-size: 24px;
-    font-weight: 400;
-    color: black;
-} */
 
 main {
     display: flex;
     justify-content: space-between;
-    margin: 3%;
+    margin: 0 100px 20px 100px;
     width: auto;
     height: auto;
+    gap: 50px;
 }
 
 .esquerda {
     display: flex;
     gap: 10px;
     flex-direction: column;
+    align-items: center;
 }
 
 .text_input {
     color: black;
     border: none;
     text-transform: lowercase;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .botoes {
@@ -64,14 +63,20 @@ main {
 }
 
 .btn_criptografar {
-    background-color: #0a3871;
+    background-color: #D8DFE8;
     border: 1px solid #0a3871;
     border-radius: 24px;
-    color: white;
+    color: #0a3871;
     cursor: pointer;
     height: 67px;
     width: 328px;
+    font-size: 20px;
 }
+
+.btn_criptografar:hover {
+    background-color: #0a3871;
+    color: #ffffff;
+  }
 
 .btn_descriptografar {
     background: #D8DFE8;
@@ -82,23 +87,57 @@ main {
     height: 67px;
     width: 328px;
     margin-left: 30px;
+    font-size: 20px;
 }
+
+.btn_descriptografar:hover {
+    background-color: #0a3871;
+    color: #ffffff;
+  }
 
 .direita {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
     align-items: center;
     height: auto;
 }
 
-.text_output {
+.direita {
+    display: flex;
     background: white;
-    background-image: url(/imagens/boneco.png);
     background-repeat: no-repeat;
     border: none;
-    border-radius: 24px;
+    border-radius: 20px;
     color: #0a3871;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.text_output {
+    background: white;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 20px;
+    color: #0a3871;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.imagem-menino {
+    width: 50%;
+}
+
+.mensagem-advertencia {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.mensagem-info {
+    color: black;
+    font-size: 16px;
+    padding: 0 50px 0 80px;
 }
 
 .btn_copiar {
@@ -108,6 +147,17 @@ main {
     cursor: pointer;
     height: 67px;
     width: 336px;
+    font-size: 20px;
+    margin-top: 115px;
+}
+
+.btn_copiar:hover {
+    background-color: #0a3871;
+    color: #ffffff;
+  }
+
+.hidden {
+    display: none;
 }
 
 .rodape {

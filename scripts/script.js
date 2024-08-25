@@ -5,6 +5,19 @@ function btnCriptografar(){
     const textoCriptografado = criptografar(textInput.value);
     textOutput.value = textoCriptografado;
     textInput.value = "";
+
+    // Ocultar elementos
+    const imagem = document.querySelector(".imagem-menino");
+    const mensagemAdvertencia = document.querySelector(".mensagem-advertencia");
+    const mensagemInfo = document.querySelector(".mensagem-info");
+    imagem.classList.add("hidden");
+    mensagemAdvertencia.classList.add("hidden");
+    mensagemInfo.classList.add("hidden");
+
+    // Exibir resultado e botão
+    textOutput.classList.remove("hidden");
+    const botaoCopiar = document.querySelector(".btn_copiar");
+    botaoCopiar.classList.remove("hidden");
 }
 
 function criptografar(stringCriptografada) {
@@ -40,4 +53,23 @@ function descriptografar(stringDescriptografada) {
     }
 
     return stringDescriptografada;
+}
+
+function copiar() {
+    const mensagemCopiada = document.querySelector('.btn_copiar');
+
+    mensagemCopiada.addEventListener('click', () => {
+    // Seleciona o texto da área de saída
+    textOutput.select();
+
+    // Copia o texto selecionado para a área de transferência
+    navigator.clipboard.writeText(textOutput.value)
+        .then(() => {
+        alert('Texto copiado com sucesso!');
+        })
+        .catch(err => {
+        console.error('Falha ao copiar:', err);
+        alert('Erro ao copiar o texto. Tente novamente.');
+        });
+    });
 }

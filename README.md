@@ -24,11 +24,11 @@ Este projeto é uma aplicação web simples que permite aos usuários criptograf
 
 1. **Clonar o repositório:**
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/GermanoMacieira/Challenge-ONE-Decodificador.git
    ```
 2. **Navegar até o diretório do projeto:**
    ```bash
-   cd nome-do-repositorio
+   cd Challenge-ONE-Decodificador
    ```
 3. **Abrir o arquivo `index.html` no navegador:**
    - Você pode abrir o arquivo diretamente no navegador ou usar uma extensão como "Live Server" no VSCode para uma melhor experiência de desenvolvimento.
